@@ -6,6 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { Test } from "./test";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <div>(root.tsx) <Test /></div>
         <Outlet />
         <ScrollRestoration />
         <LiveReload />

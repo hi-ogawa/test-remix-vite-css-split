@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Test } from "~/test";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,6 +11,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+      <div>(routes/_index.tsx) <Test /></div>
       <h1>Welcome to Remix</h1>
       <ul>
         <li>
